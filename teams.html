@@ -6,60 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Formula 1</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   </head>
   <body>
-    <div id="centered">
-      <h1 id="pageTitle">Formula 1</h1>
-      <div id="navList">
-          <ul id="nav">
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="teams.html">Takımlar</a></li>
-            <li><a href="history.html">F1 Tarihçesi</a></li>
-          </ul>
+    <header class="navbar d-flex justify-content-start align-items-center bg-dark h-50">
+      <div class="text-danger">
+        <h1 >Formula 1</h1>
       </div>
-      <h3 class="sectionTitles">Takımlar</h3>
-      <ol id="teamsInfo">
-        <li>
-            <img src="images/redbull.png" alt="Redbull Racing">
-            <p>Red Bull Racing - Max <span>Verstappen</span> / Sergio <span>Perez</span></p>
-        </li>
-        <li>
-            <img src="images/ferrari.png" alt="Ferrari">
-            <p>Ferrari - Charles <span>Leclerc</span> / Carlos <span>Sainz</span></p>
-        </li>
-        <li>
-            <img src="images/mercedes.png" alt="Mercedes">
-            <p>Mercedes - Lewis <span>Hamilton</span> / George <span>Russell</span></p>
-        </li>
-        <li>
-            <img src="images/mclaren.png" alt="McLaren">
-            <p>McLaren - Daniel <span>Ricciardo</span> / Lando <span>Norris</span></p>
-        </li>
-        <li>
-            <img src="images/alphine.png" alt="Alpine">
-            <p>Alpine - Fernando <span>Alonso</span> / Esteban <span>Ocon</span></p>
-        </li>
-        <li>
-            <img src="images/alfaromeo.png" alt="Alfa Romeo">
-            <p>Alfa Romeo - <span>Zhou</span> Guanyu / Valtteri <span>Bottas</span></p>
-        </li>
-        <li>
-            <img src="images/haas.png" alt="Haas F1 Team">
-            <p>Haas F1 Team - Mick <span>Schumacher</span> / Kevin <span>Magnussen</span></p>
-        </li>
-        <li>
-            <img src="images/alphathauri.png" alt="AlphaTauri">
-            <p>AlphaTauri - Pierre <span>Gasly</span> / Yuki <span>Tsunoda</span></p>
-        </li>
-        <li>
-            <img src="images/astonmartin.png" alt="Aston Martin">
-            <p>Aston Martin - Sebastian <span>Vettel</span> / Lance <span>Stroll</span></p>
-        </li>
-        <li>
-            <img src="images/williams.png" alt="Williams">
-            <p>Williams - Alexander <span>Albon</span> / Nicholas <span>Latifi</span></p>
-        </li>
-      </ol>
-    </div>
+      <div>
+        <ul class="d-flex justify-content-center align-items-center p-2 list-unstyled">
+          <li class="mr-3"><a href="index.html" active>Ana Sayfa</a></li>
+          <li class="mr-3"><a href="teams.html">Takımlar</a></li>
+          <li class="mr-3"><a href="history.html">F1 Tarihçesi</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="container mt-5 text-center">
+      <h3 class="text-danger">Takımlar</h3>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 jumbotron border rounded">
+            <img src="images/redbull.png" alt="Redbull Racing" class="w-100">
+            <p class="display-5">Red Bull Racing - Max <span class="text-uppercase font-weight-bold font-italic text-danger">Verstappen</span> / Sergio <span class="text-uppercase font-weight-bold font-italic text-danger">Perez</span></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 jumbotron border rounded">
+            <img src="images/ferrari.png" alt="Ferrari" class="w-100">
+            <p class="display-5">Ferrari - Charles <span class="text-uppercase font-weight-bold font-italic text-danger">Leclerc</span> / Carlos <span class="text-uppercase font-weight-bold font-italic text-danger">Sainz</span></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 jumbotron border rounded">
+            <img src="images/mercedes.png" alt="Mercedes" class="w-100">
+            <p class="display-5">Mercedes - Lewis <span class="text-uppercase font-weight-bold font-italic text-danger">Hamilton</span> / George <span class="text-uppercase font-weight-bold font-italic text-danger">Russell</span></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 jumbotron border rounded">
+            <img src="images/mclaren.png" alt="McLaren" class="w-100">
+            <p class="display-5">McLaren - Daniel <span class="text-uppercase font-weight-bold font-italic text-danger">Ricciardo</span> / Lando <span class="text-uppercase font-weight-bold font-italic text-danger">Norris</span></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 jumbotron border rounded">
+            <img src="images/alphine.png" alt="Alpine" class="w-100">
+            <p class="display-5">Alpine - Fernando <span class="text-uppercase font-weight-bold font-italic text-danger">Alonso</span> / Esteban <span class="text-uppercase font-weight-bold font-italic text-danger">Ocon</span></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 jumbotron border rounded">
+            <img src="images/alfaromeo.png" alt="Alfa Romeo" class="w-100">
+            <p class="display-5">Alfa Romeo - <span class="text-uppercase font-weight-bold font-italic text-danger">Zhou</span> Guanyu / Valtteri <span class="text-uppercase font-weight-bold font-italic text-danger">Bottas</span></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 jumbotron border rounded">
+            <img src="images/haas.png" alt="Haas F1 Team" class="w-100">
+            <p class="display-5">Haas F1 Team - Mick <span class="text-uppercase font-weight-bold font-italic text-danger">Schumacher</span> / Kevin <span class="text-uppercase font-weight-bold font-italic text-danger">Magnussen</span></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 jumbotron border rounded">
+            <img src="images/alphathauri.png" alt="AlphaTauri" class="w-100">
+            <p class="display-5">AlphaTauri - Pierre <span class="text-uppercase font-weight-bold font-italic text-danger">Gasly</span> / Yuki <span class="text-uppercase font-weight-bold font-italic text-danger">Tsunoda</span></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 jumbotron border rounded">
+            <img src="images/astonmartin.png" alt="Aston Martin" class="w-100">
+            <p class="display-5">Aston Martin - Sebastian <span class="text-uppercase font-weight-bold font-italic text-danger">Vettel</span> / Lance <span class="text-uppercase font-weight-bold font-italic text-danger">Stroll</span></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 jumbotron border rounded">
+            <img src="images/williams.png" alt="Williams" class="w-100">
+            <p class="display-5">Williams - Alexander <span class="text-uppercase font-weight-bold font-italic text-danger">Albon</span> / Nicholas <span class="text-uppercase font-weight-bold font-italic text-danger">Latifi</span></p>
+        </div>
+        
+      </div>
+      <a href="history.html" class=" mt-3 btn btn-danger">F1 Tarihçesi Sayfası</a>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
   </body>
 </html>
